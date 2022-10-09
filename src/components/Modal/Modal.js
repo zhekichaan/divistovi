@@ -13,6 +13,7 @@ export const Modal = () => {
 
     const onClose = () => {
         dispatch(openModal())
+        document.body.style.overflow = 'auto' 
     }
 
     useEffect(() => {

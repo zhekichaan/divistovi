@@ -11,25 +11,11 @@ export const MenuModal = () => {
 
     const onClose = () => {
         dispatch(openMenuModal())
+        document.body.style.overflow = 'auto' 
     }
-
-    // useEffect(() => {
-    //     window.addEventListener('keydown', handleKeyDown);
-
-    //     return () => {
-    //         window.removeEventListener('keydown', handleKeyDown)
-    //     };
-    // });
-
-    // const handleKeyDown = (e) => {
-    //     if(e.code === 'Escape') {
-    //         onClose()
-    //     }
-    // }
 
     return createPortal(
         <Overlay>
-            <BackLink onClick={onClose}>nazad</BackLink>
             <LinksWrapper>
             <StyledLink to="/diana" onClick={onClose}>
                         Diana
@@ -52,13 +38,6 @@ export const MenuModal = () => {
     )
 }
 
-const BackLink = styled.button`
-    padding: 8px;
-    position: absolute;
-    top: 310px;
-    right: 55px;
-    
-`
 
 const LinksWrapper = styled.div`
     display: flex;

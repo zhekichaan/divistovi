@@ -9,10 +9,12 @@ const rootSlice = createSlice({
     },
     reducers: {
         openModal(state, action) {
+            document.body.style.overflow = 'hidden' 
             state.isActive = !state.isActive
             state.selectedImage = action.payload
         },
         openMenuModal(state, action) {
+            document.body.style.overflow = 'hidden' 
             state.isMenuActive = !state.isMenuActive
         }
     }
