@@ -1,8 +1,8 @@
 {
-  "name": "alex-furniture",
+  "name": "divistovi",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://goitacademy.github.io/alex-furniture/",
+  "homepage": "https://goitacademy.github.io/divistovi/",
   "dependencies": {
     "@redux-devtools/extension": "^3.2.3",
     "@reduxjs/toolkit": "^1.8.5",
