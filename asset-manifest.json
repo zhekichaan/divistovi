@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/divistovi/static/css/main.0d5b2924.css",
+    "main.js": "/divistovi/static/js/main.ca88159e.js",
+    "index.html": "/divistovi/index.html",
+    "main.0d5b2924.css.map": "/divistovi/static/css/main.0d5b2924.css.map",
+    "main.ca88159e.js.map": "/divistovi/static/js/main.ca88159e.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.0d5b2924.css",
+    "static/js/main.ca88159e.js"
+  ]
+}
