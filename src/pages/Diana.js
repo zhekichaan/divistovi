@@ -2,8 +2,12 @@ import { Box } from "components/Box"
 import styled from "styled-components"
 import { images } from "images/images"
 import { nanoid } from "@reduxjs/toolkit"
+import { useDispatch } from "react-redux"
+import { openModal } from "redux/rootSlice"
 
-export default function Home() {
+export default function Diana() {
+    const dispatch = useDispatch()
+
     return (
         <Box width="1200px" margin="auto" display="flex" flexDirection="column" alignItems="center" marginTop="50px">
             <h2>
@@ -11,7 +15,7 @@ export default function Home() {
             </h2> 
             <Container>
             {images.map(image => 
-                <Image key={nanoid()} src={image.href} alt="di"></Image>
+                <Image key={nanoid()} src={image.href} onClick={() => {dispatch(openModal(image.href))}} alt="di"></Image>
             )}
             </Container>
             <Credit>Made with ❤️ by zhekichaan</Credit>
