@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/divistovi/static/css/main.0d5b2924.css",
-    "main.js": "/divistovi/static/js/main.196fb023.js",
+    "main.js": "/divistovi/static/js/main.2aa2f3b3.js",
     "index.html": "/divistovi/index.html",
     "main.0d5b2924.css.map": "/divistovi/static/css/main.0d5b2924.css.map",
-    "main.196fb023.js.map": "/divistovi/static/js/main.196fb023.js.map"
+    "main.2aa2f3b3.js.map": "/divistovi/static/js/main.2aa2f3b3.js.map"
   },
   "entrypoints": [
     "static/css/main.0d5b2924.css",
-    "static/js/main.196fb023.js"
+    "static/js/main.2aa2f3b3.js"
   ]
 }
