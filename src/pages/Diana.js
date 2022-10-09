@@ -1,6 +1,6 @@
 import { Box } from "components/Box"
 import styled from "styled-components"
-import { images } from "images/images"
+import { images } from "images/diana"
 import { nanoid } from "@reduxjs/toolkit"
 import { useDispatch } from "react-redux"
 import { openModal } from "redux/rootSlice"
