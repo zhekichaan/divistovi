@@ -8,11 +8,13 @@ import KatyaDasha from 'pages/KatyaDasha';
 import SashaMasha from 'pages/SashaMasha';
 import Zhenya from 'pages/Zhenya';
 import { useSelector } from 'react-redux';
-import { selectIsActive } from 'redux/selectors';
+import { selectIsActive, selectIsMenuActive } from 'redux/selectors';
 import { Modal } from './Modal/Modal';
+import { MenuModal } from './MenuModal/MenuModal';
 
 export const App = () => {
   const isModalOpened = useSelector(selectIsActive)
+  const isMenuActive = useSelector(selectIsMenuActive)
 
   return (
     <>
@@ -27,6 +29,7 @@ export const App = () => {
       </Route>
     </Routes>
     {isModalOpened && <Modal />}
+    {isMenuActive && <MenuModal />}
     <GlobalStyle />
     </>
   );

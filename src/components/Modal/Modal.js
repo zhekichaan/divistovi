@@ -31,9 +31,7 @@ export const Modal = () => {
 
     return createPortal(
         <Overlay onClick={onClose}>
-            <div>
                 <ImageWrapper src={imageUrl} alt="" />
-            </div>
         </Overlay>, 
         modalRoot
     )
@@ -52,10 +50,14 @@ export const Overlay = styled.div`
 `
 
 export const ImageWrapper = styled.img`
-    max-width: 1200px;
-    max-height: 900px;
+    max-width: 70%;
     object-fit: contain;
+    @media (min-width: 1280px) {
+        max-width: 1200px;
+        max-height: 900px;
+        object-fit: contain;
+    }
+    
 
-    transition: opacity 2.0s ease-in;
 `
 
