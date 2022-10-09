@@ -1,21 +1,39 @@
 import { Box } from "components/Box"
 import styled from "styled-components"
+import { images } from "images/images"
+import { nanoid } from "@reduxjs/toolkit"
 
 export default function Home() {
     return (
         <Box width="1200px" margin="auto" display="flex" flexDirection="column" alignItems="center" marginTop="50px">
             <h2>
-                Hey evrivan my name ist Alex, I am proffesional furnitue maker
+                divistova is the best
             </h2> 
-            <HomeImage 
-                src="https://scontent.cdninstagram.com/v/t1.15752-9/311141542_468920431857889_7958166673357056258_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=5a057b&_nc_ohc=YhJWHzXEh_QAX8JPF-x&_nc_ad=z-m&_nc_cid=0&_nc_ht=scontent.cdninstagram.com&oh=03_AVLovLgDlqdSoHYmIhKPf9HQlt5wgh1oG9n2Clanh_rqjQ&oe=6365AEDE"
-                alt="" 
-                width="300px"
-            />
+            <Container>
+            {images.map(image => 
+                <Image key={nanoid()} src={image.href} alt="di"></Image>
+            )}
+            </Container>
+            <Credit>Made with ❤️ by zhekichaan</Credit>
         </Box>
     )
 }
 
-export const HomeImage = styled.img`
-    margin-top: 20px;
+export const Image = styled.img`
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+`
+
+const Container = styled.div`
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    grid-column-gap: 50px;
+    grid-row-gap: 30px;
+`
+
+const Credit = styled.p`
+    margin: 40px;
 `
